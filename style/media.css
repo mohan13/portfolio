@@ -1,0 +1,108 @@
+@media screen and (max-width:768px){
+    .login{
+        display: none;
+    }
+    .nav{
+        background-color: black;
+        position: absolute;
+        height:100vh;
+        top:7%;
+        left: 0;
+        transform:translateX(-100%);
+        transition: transform 0.5s linear 0s ;
+        display: grid;
+        place-content: right;
+        
+    }
+    .nav.active{
+        transform: translateX(0%);
+        background-color: black;
+        width: 100%;
+    }
+    .nav-list{
+        display:block;
+        font-size: 40px;
+    }
+    .nav-list>li{
+        margin-top: 10%;
+        
+    }
+    .menu{
+        display: flex;
+    }
+    .sponser{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        text-align: center;
+    }
+    .para1,.para2{
+        display: block;
+        grid-template-columns: fit-content(65ch); 
+        width: 90%;
+        margin: 0 auto;}
+    
+    .project{
+        display: flex;
+        flex-direction: column;
+    }
+    .project-list{
+        margin-top:2%;
+    }
+    .h1{
+        text-align: center;
+        font-size: 25px;
+    }
+    .h1>p{
+        font-size: 15px;
+        text-align: center;
+        padding:0 10%;
+    }
+    .form>input{
+        margin-top:4%;
+        height: 40px;
+        width: 350px;
+        border-style: none;
+        padding-left: 2%;
+        border: solid 2px #ffd803;
+    }
+    .box{
+        display: flex;
+        justify-content: space-evenly;
+        width: 95%;
+        margin: 0 auto;
+    }
+    .msg{
+        margin: 4% 0;
+        height: 100px;
+        width: 250px;
+        border: solid 2px #ffd803;
+    }
+}
+@media screen and (max-width:480px){
+    .sponser{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        place-content: center;
+    }
+    .h1>p{
+        font-size: 15px;
+        text-align: center;
+        padding:0 10%;
+    }
+    .box{
+        display:grid;
+        justify-content: space-evenly;
+        width: 95%;
+        margin: 0 auto;
+    }
+    .form>input{
+        margin-top:4%;
+        height: 40px;
+        width: 250px;
+        border-style: none;
+        padding-left: 5%;
+        border: solid 2px #ffd803;
+    }
+}

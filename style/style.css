@@ -1,0 +1,160 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-color: #16161a;
+}
+p{
+    color:#94a1b2;
+    margin-top:15px ;
+    line-height: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+}
+.title{
+    color: #fffffe;
+    font-size: 40px; 
+    margin:2% 0;
+}
+/* this is for Navbar aka menu */
+.head{
+    display: flex;
+    justify-content:space-between;  
+    align-items: center; 
+    width: 90%;
+    margin:15px auto;
+}
+.logo>a{
+    color:#fffffe;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.nav-list{
+    display: flex;
+    list-style-type: none;
+}
+.nav-list-item{
+    cursor: pointer;
+    color:#94a1b2;
+    text-decoration: none;
+    margin:0 25px;
+    font-size: 20px;
+}
+.nav-list-item:hover{
+    color:#fffffe;
+}
+.btn{
+    cursor: pointer;
+    margin: 5px 0;
+ padding: 8px 16px;
+ border: 1px solid #ffd803;
+ background-color: #ffd803;
+ border-radius: 4px;
+ font-size: 19px;
+ color: #fffffe;
+}
+.btn:hover{
+    border:1px solid #000;
+    color: #000;
+    background-color: #fffffe;
+}
+.menu{
+    display: none;
+}
+/*paragraph*/
+.para1,.para2{
+    display: grid;
+    grid-template-columns: fit-content(65ch); 
+    width: 90%;
+    margin: 0 auto;}
+
+/* This is Sponser */
+.sponser{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin:5% auto;
+}
+/* my Projects */
+.project{
+    display: grid;
+    width: 90%;
+    margin:5% auto;
+    grid-template-columns: 1fr 1fr;
+    gap:8%; 
+}
+
+.project-list{
+    width: 100%;
+}
+.project-list>img{
+    width: 100%;
+}
+.experiance{
+    width: 100%;
+    gap:8%;
+    columns: 2;
+    padding: 2% 5%;
+    margin:5% 0;
+    background-color: #72757e;
+}
+.para2{
+    position: relative;
+    top:0;
+}
+.para2>.btn{
+    width: 150px;
+    margin-top: 3%;
+}
+/* form */
+.box{
+    display: flex;
+    justify-content: space-evenly;
+    width: 95%;
+    margin: 0 auto;
+}
+.form{
+    display:grid;
+    margin-right: 2%;
+}
+.h1{
+    font-size: 35px;
+    color:#ffd803;
+    margin-top: 5%;
+}
+.h1>p{
+    font-size: 20px;
+}
+.form>input{
+    margin-top:4%;
+    height: 40px;
+    width: 350px;
+    border-style: none;
+    border: solid 2px #ffd803;
+}
+.msg{
+    margin: 4% 0;
+    height: 100px;
+    width: 250px;
+    border: solid 2px #ffd803;
+}
+/*footer*/
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #72757e;
+    margin-top:4% ;
+    padding: 2% 5%;
+}
+.social-network{
+    display: flex;
+    list-style: none;
+   
+}
+.social-network>li{
+    margin-left:20px;
+}
